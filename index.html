@@ -8,12 +8,28 @@
 </head>
 <body>
 
+    <!-- Barra Superior de Acessibilidade -->
+    <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="acessibilidade-container">
+            <button id="btn-contraste" aria-pressed="false">
+                🌓 Alto Contraste
+            </button>
+            <button id="btn-aumentar-texto" aria-label="Aumentar tamanho do texto">
+                A+
+            </button>
+            <button id="btn-diminuir-texto" aria-label="Diminuir tamanho do texto">
+                A-
+            </button>
+        </div>
+    </div>
+
     <header>
         <h1>Monocromia e Cegueira</h1>
         <p>Entendendo as diferenças entre a ausência de cores e a perda de visão</p>
     </header>
 
     <main class="container">
+        <!-- Seção Monocromia -->
         <section class="card">
             <h2>1. Monocromia (Acromatopsia)</h2>
             <p>A monocromia é uma forma rara e extrema de daltonismo na qual a pessoa <strong>não consegue distinguir cores</strong>, enxergando o mundo em tons de cinza, preto e branco.</p>
@@ -28,6 +44,7 @@
             </ul>
         </section>
 
+        <!-- Seção Cegueira -->
         <section class="card">
             <h2>2. Cegueira</h2>
             <p>A cegueira reflete a <strong>perda total ou quase total da capacidade de enxergar</strong>, impedindo a realização de tarefas visuais cotidianas mesmo com o uso de óculos.</p>
@@ -40,15 +57,16 @@
             </ul>
         </section>
 
+        <!-- Tabela Comparativa -->
         <section class="card full-width">
             <h2>Comparativo Rápido</h2>
             <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr>
-                            <th>Característica</th>
-                            <th>Monocromia</th>
-                            <th>Cegueira</th>
+                            <th scope="col">Característica</th>
+                            <th scope="col">Monocromia</th>
+                            <th scope="col">Cegueira</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -80,6 +98,6 @@
         <p>Desenvolvido para publicação no GitHub Pages</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
