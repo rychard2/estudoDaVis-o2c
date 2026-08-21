@@ -1,7 +1,12 @@
+/* Reset global para suporte ao dimensionamento de fonte */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* Define a base padrão ajustável pelo JS */
 }
 
 body {
@@ -9,6 +14,7 @@ body {
     line-height: 1.6;
     background-color: #f4f6f8;
     color: #333333;
+    font-size: 1rem;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -62,7 +68,7 @@ header p {
     font-size: 1.1rem;
 }
 
-/* Layout Responsivo */
+/* Layout Principal */
 .container {
     max-width: 1000px;
     margin: 2rem auto;
@@ -86,6 +92,7 @@ header p {
 }
 
 .card h2 {
+    font-size: 1.5rem;
     color: #111827;
     border-bottom: 2px solid #e5e7eb;
     padding-bottom: 0.5rem;
@@ -93,6 +100,7 @@ header p {
 }
 
 .card h3 {
+    font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #374151;
@@ -147,7 +155,9 @@ footer {
     margin-top: 2rem;
 }
 
-/* ESTILOS DE ALTO CONTRASTE */
+/* ----------------------------------
+   MODO ALTO CONTRASTE (WCAG)
+---------------------------------- */
 body.alto-contraste {
     background-color: #000000 !important;
     color: #ffff00 !important;
