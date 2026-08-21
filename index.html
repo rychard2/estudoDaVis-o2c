@@ -11,13 +11,13 @@
     <!-- Barra Superior de Acessibilidade -->
     <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
         <div class="acessibilidade-container">
-            <button id="btn-contraste" aria-pressed="false">
+            <button id="btn-contraste" onclick="alternarContraste()" aria-pressed="false">
                 🌓 Alto Contraste
             </button>
-            <button id="btn-aumentar-texto" aria-label="Aumentar tamanho do texto">
+            <button id="btn-aumentar-texto" onclick="aumentarTexto()" aria-label="Aumentar tamanho do texto">
                 A+
             </button>
-            <button id="btn-diminuir-texto" aria-label="Diminuir tamanho do texto">
+            <button id="btn-diminuir-texto" onclick="diminuirTexto()" aria-label="Diminuir tamanho do texto">
                 A-
             </button>
         </div>
